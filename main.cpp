@@ -68,5 +68,10 @@ int main() {
     // Print the bottom element of the stack.
     std::cout << "Bottom element: " << myStack.bottom() << std::endl;
 
+    // Clear the stack
+    while (!myStack.isEmpty()) {
+        myStack.pop();
+    }
+
     return 0;
 }
